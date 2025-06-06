@@ -17,6 +17,7 @@ namespace HMS.Shared.Proxies.Implementations
         private readonly string _baseUrl = Config._base_api_url;
         private readonly string _token;
         private readonly JsonSerializerOptions _jsonOptions;
+        public HttpClient HttpClient => _httpClient;
 
         public AppointmentProxy(HttpClient httpClient, string token)
         {

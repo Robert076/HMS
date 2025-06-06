@@ -134,7 +134,7 @@ namespace HMS.DesktopClient.Views
 
         private async void Home_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(typeof(AdminHomePage));
+            MainFrame.Content = null;
         }
 
         private async void Profile_Click(object sender, RoutedEventArgs e)
